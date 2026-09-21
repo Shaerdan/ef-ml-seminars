@@ -4,7 +4,7 @@ Website for the seminar series run by the Environmental Forecasting (EF) mission
 The Alan Turing Institute.
 
 **Live page:** https://shaerdan.github.io/ef-ml-seminars/
-**Repository:** https://github.com/Shaerdan/ef-ml-seminars (private; hosts the page). A synced copy lives at https://github.com/alan-turing-institute/ef-ml-seminars.
+**Repository:** https://github.com/Shaerdan/ef-ml-seminars
 
 ## How the site works
 
