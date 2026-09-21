@@ -19,7 +19,7 @@ window.SERIES = {
          "and collaborators.",
   cadence: "Roughly monthly · 45 min talk + 15 min discussion",   // free text, shown under the blurb
   contact: { name: "Shaerdan", email: "TODO@turing.ac.uk" },       // TODO: fill in
-  repo: "https://github.com/Shaerdan/ef-ml-seminars",              // update again after moving to the org
+  repo: "https://github.com/alan-turing-institute/ef-ml-seminars",
 };
 
 window.SEMINARS = [
