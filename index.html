@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ML for Environmental Forecasting — Seminar series</title>
+  <meta name="description" content="Seminar series on machine learning for environmental forecasting, run by the Environmental Forecasting mission at The Alan Turing Institute.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230e2b4f%27/%3E%3Cpath d=%27M6 22 L12 12 L17 19 L21 9 L26 22%27 fill=%27none%27 stroke=%27%2358a6ff%27 stroke-width=%273%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="kicker" id="kicker"></p>
+      <h1 id="site-title"></h1>
+      <p class="lede" id="site-blurb"></p>
+      <p class="cadence" id="site-cadence"></p>
+      <nav class="topnav" aria-label="Sections">
+        <a href="#next">Next</a>
+        <a href="#upcoming">Upcoming</a>
+        <a href="#past">Past</a>
+        <a href="#topics">Topics of interest</a>
+        <a href="#get-involved">Get involved</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="next">
+      <h2>Next seminar</h2>
+      <div id="next-card"></div>
+    </section>
+
+    <section id="upcoming">
+      <h2>Upcoming</h2>
+      <div id="upcoming-list"></div>
+    </section>
+
+    <section id="past">
+      <h2>Past seminars</h2>
+      <div id="past-list"></div>
+    </section>
+
+    <section id="topics">
+      <h2>Topics of interest</h2>
+      <p class="muted">What mission members would like to hear about next. Add yours via
+        <a id="topic-issue-link" href="#">Suggest a topic</a>.</p>
+      <ul class="topics" id="topics-list"></ul>
+    </section>
+
+    <section id="get-involved">
+      <h2>Get involved</h2>
+      <ul class="actions">
+        <li><a id="speaker-issue-link" href="#">Suggest a speaker</a> — internal or external, yourself included.</li>
+        <li><a id="topic-issue-link-2" href="#">Suggest a topic</a> — anything you want the series to cover.</li>
+        <li><a id="edit-link" href="#">Edit the seminar list</a> — the page is generated from one small data file.</li>
+        <li>Questions: <span id="contact"></span>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p class="muted">Environmental Forecasting mission · The Alan Turing Institute ·
+      <a id="source-link" href="#">Source on GitHub</a></p>
+  </footer>
+
+  <script src="seminars.js"></script>
+  <script src="topics.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

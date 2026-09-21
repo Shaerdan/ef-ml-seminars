@@ -1,0 +1,28 @@
+name: Suggest a topic
+description: A topic you would like the seminar series to cover
+title: "[Topic] "
+labels: ["topic"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: e.g. Diffusion models for ensemble generation
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it relevant to environmental forecasting?
+      placeholder: One or two sentences.
+    validations:
+      required: true
+  - type: input
+    id: speakers
+    attributes:
+      label: Possible speakers (optional)
+      placeholder: Names, groups, or papers
+  - type: input
+    id: proposer
+    attributes:
+      label: Your name (optional)
