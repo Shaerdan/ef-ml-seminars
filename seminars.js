@@ -47,7 +47,23 @@ window.SEMINARS = [
       "often avoid this trade-off, yielding methods that are both robust and scalable. Gaussian process " +
       "regression will provide the main running example, but I will also discuss broader applications to " +
       "Kalman filtering, change-point detection, simulation-based inference, and beyond.",
-    bio: null,                  // optional short bio (plain text; blank line = new paragraph)
+    bio:
+      "François-Xavier Briol is Professor of Statistics and Machine Learning at UCL Statistical Science, " +
+      "where he co-leads the Fundamentals of Statistical Machine Learning group and leads the Computational " +
+      "Statistics and Machine Learning theme. From 2020 to 2023 he was a Group Leader in Data-Centric " +
+      "Engineering at The Alan Turing Institute.\n\n" +
+      "His research merges large-scale scientific models with data: new computational methods, inference that " +
+      "stays robust when the model is misspecified or the data are corrupted, and uncertainty quantification. " +
+      "Recent work with his group develops generalised Bayesian methods that are both robust and scalable, for " +
+      "Gaussian process emulators, online change-point detection, Kalman filtering and simulation-based " +
+      "inference. His earlier work on probabilistic numerics and Bayesian quadrature includes his most-cited " +
+      "paper (Statistical Science, 2019).\n\n" +
+      "He is director of research of the UCL CDT in Data-Intensive Science, co-director of the London ELLIS " +
+      "unit, an associate editor of the SIAM/ASA Journal on Uncertainty Quantification and of Bayesian " +
+      "Analysis, an area chair for NeurIPS, and an organiser of the One World Approximate Bayesian Inference " +
+      "seminar series. He studied at Warwick (MMORSE, then a PhD through the Warwick–Oxford CDT) and held " +
+      "postdoctoral positions at Imperial College London and the University of Cambridge before joining UCL " +
+      "in 2019.",
     tags: ["probabilistic ML", "generalised Bayesian inference", "Gaussian processes",
            "robustness", "Kalman filtering", "change-point detection", "simulation-based inference"],
     slides: null,               // URL after the talk
