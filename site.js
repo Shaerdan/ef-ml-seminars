@@ -60,7 +60,7 @@
     var stamp = now.getUTCFullYear() + pad(now.getUTCMonth() + 1) + pad(now.getUTCDate()) + 'T' +
       pad(now.getUTCHours()) + pad(now.getUTCMinutes()) + pad(now.getUTCSeconds()) + 'Z';
     var where = [s.location, s.online].filter(Boolean).join(' - ');
-    var url = location.href.split('#')[0] + '#' + s.id;
+    var url = location.origin + location.pathname + '#' + s.id;
     var lines = [
       'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//EF ML Seminars//EN', 'BEGIN:VEVENT',
       'UID:' + s.id + '@ef-ml-seminars',
