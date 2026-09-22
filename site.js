@@ -103,6 +103,7 @@
       '<p class="speaker">' + speaker +
         (s.affiliation ? '<br><span class="affil">' + esc(s.affiliation) + '</span>' : '') +
       '</p>' +
+      (s.note ? '<p class="muted note">' + esc(s.note) + '</p>' : '') +
       (tags ? '<div class="tags">' + tags + '</div>' : '') +
       (s.abstract
         ? '<details' + (open ? ' open' : '') + '><summary>Abstract</summary>' +
@@ -125,6 +126,10 @@
   el('speaker-issue-link').href = repo + '/issues/new?template=speaker.yml';
   el('edit-link').href = repo + '/edit/main/seminars.js';
   el('source-link').href = repo;
+  if (S.organisers) {
+    el('organisers').textContent = S.organisers;
+    el('organisers-li').hidden = false;
+  }
   if (S.contact && S.contact.email) {
     el('contact').innerHTML = '<a href="mailto:' + esc(S.contact.email) + '">' +
       esc(S.contact.name || S.contact.email) + '</a>';
@@ -153,6 +158,7 @@
       '<strong>' + esc(t.topic) + '</strong>' +
       (t.why ? '<br><span class="muted">' + esc(t.why) + '</span>' : '') +
       (t.proposed_by ? ' <span class="muted">— proposed by ' + esc(t.proposed_by) + '</span>' : '') +
+      (t.seminar ? ' <a href="#' + esc(t.seminar) + '">see seminar</a>' : '') +
       (t.issue ? ' <a href="' + esc(t.issue) + '">discussion</a>' : '') +
       '</li>';
   }).join('') || '<li class="muted">Nothing listed yet.</li>';

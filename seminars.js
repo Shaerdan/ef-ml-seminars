@@ -13,12 +13,14 @@ window.SERIES = {
   title: "ML for Environmental Forecasting",
   kicker: "Seminar series · Environmental Forecasting mission · The Alan Turing Institute",
   short: "EF ML Seminar",          // used in calendar entries
-  blurb: "Invited talks on machine learning for environmental forecasting: " +
-         "probabilistic and physics-informed ML, data assimilation, uncertainty " +
-         "quantification, and forecast evaluation. Open to all EF mission members " +
-         "and collaborators.",
-  cadence: "Roughly monthly · 45 min talk + 15 min discussion",   // free text, shown under the blurb
-  contact: { name: "Shaerdan", email: "TODO@turing.ac.uk" },       // TODO: fill in
+  blurb: "The Environmental Forecasting (EF) mission's monthly seminar series: invited talks on " +
+         "machine learning for environmental forecasting, a way to share ideas with the wider " +
+         "university network and develop new opportunities together. Open to the whole Mission " +
+         "and to collaborators.",
+  cadence: "Monthly · online · 1 hour (30 min talk + 30 min Q&A)",   // free text, shown under the blurb
+  organisers: "Shaerdan Shataer (lead), with Louisa Van Zeeland and Evangeline Corcoran " +
+              "(speaker suggestions) and Kelin Yue (logistics). The lead rotates every six months.",
+  contact: { name: "Shaerdan Shataer", email: "sshataer@turing.ac.uk" },
   repo: "https://github.com/Shaerdan/ef-ml-seminars",
 };
 
@@ -29,11 +31,13 @@ window.SEMINARS = [
     speaker: "Prof. François-Xavier Briol",
     affiliation: "Professor of Statistics and Machine Learning, University College London",
     speaker_url: "https://fxbriol.github.io/",
-    date: null,                 // "YYYY-MM-DD" once confirmed
-    time: null,                 // e.g. "14:00–15:00 (UK time)"
+    date: "2026-09-24",
+    time: "11:00–12:00 (UK time)",
     duration_min: 60,           // used for the calendar entry
-    location: null,             // room / "Online" / "Hybrid"; null = "Venue TBC"
+    location: "Online",         // room / "Online" / "Hybrid"; null = "Venue TBC"
     online: null,               // meeting link, if you want it public (see README: Pages sites are public)
+    note: "30 min talk + 30 min Q&A. Hosted by the sea-ice team; the whole Mission is invited. " +
+          "Joining link circulated by email.",
     abstract:
       "Probabilistic machine learning methods rely on statistical models that are inevitably imperfect. " +
       "In environmental forecasting, for example, measurements may be corrupted by faulty sensors, " +
@@ -58,7 +62,8 @@ window.SEMINARS = [
   //   affiliation: "",
   //   speaker_url: null,
   //   date: null, time: null, duration_min: 60,
-  //   location: "TBC", online: null,
+  //   location: "Online", online: null,
+  //   note: null,
   //   abstract: "",
   //   bio: null,
   //   tags: [],
